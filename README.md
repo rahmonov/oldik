@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="https://t.me/jakhonrakhmonov"><img src="https://raw.githubusercontent.com/rahmonov/oldik/master/imgages/clinking-glasses.png" alt="Oldik" width="200"></a>
+  <a href="https://t.me/jakhonrakhmonov"><img src="https://raw.githubusercontent.com/rahmonov/oldik/main/images/clinking-glasses.png" alt="Oldik" width="200"></a>
   <br>
   Oldik
   <br>
@@ -9,7 +9,7 @@
 
 <h4 align="center">A small fun project to give tribute to the <a href="https://t.me/jakhonrakhmonov/32">"Oldik 🥂" meme</a>.</h4>
 
-![screenshot](https://raw.githubusercontent.com/rahmonov/oldik/master/imgages/oldik-demo.mp4)
+![screenshot](https://raw.githubusercontent.com/rahmonov/oldik/main/images/oldik.gif)
 
 ## To Contribute
 

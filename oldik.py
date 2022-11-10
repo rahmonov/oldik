@@ -1,13 +1,17 @@
 import typer
 
 import time
-from frames import glass_frames, piyola_frames
+from frames import glass_frames, piyola_frames, beers_frames
 
 DEFAULT_FRAMES = glass_frames
 
 COUNTRY_TO_FRAMES = {
-    "uzbekistan": piyola_frames
+    "uzbekistan": piyola_frames,
+    "cheers-beers": beers_frames,
 }
+# CHEERS_TO_FRAMES = {
+#     "cheers-beers": beers_frames
+# }
 
 
 def clear_line(n=1):

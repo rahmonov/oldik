@@ -13,7 +13,7 @@
 
 ## To Contribute
 
-1. Add your frames to `frames.py`.
+1. Add your frames to `frames.py`. You can use https://www.text-image.com/convert/ascii.html to convert images to frames.
 1. Import it from `oldik.py`.
 1. Add your imported frame to the `COUNTRY_TO_FRAMES` dictionary. It has to map to a country name. For example, Uzbekistan maps to piyola frames..
 1. That's it.

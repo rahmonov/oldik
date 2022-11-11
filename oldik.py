@@ -1,7 +1,9 @@
 import typer
 
 import time
-from frames import glass_frames, piyola_frames, beer_frames
+from frames.piyola import piyola_frames
+from frames.beer import beer_frames
+from frames.glass import glass_frames
 
 DEFAULT_FRAMES = glass_frames
 

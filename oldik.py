@@ -4,12 +4,14 @@ import time
 from frames.piyola import piyola_frames
 from frames.beer import beer_frames
 from frames.glass import glass_frames
+from frames.cola import cola_frames
 
 DEFAULT_FRAMES = glass_frames
 
 COUNTRY_TO_FRAMES = {
     "uzbekistan": piyola_frames,
-    "germany": beer_frames
+    "germany": beer_frames,
+    "gopher": cola_frames
 }
 
 

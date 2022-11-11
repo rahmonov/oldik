@@ -14,8 +14,9 @@
 ## To Contribute
 
 1. Add your frames to `frames.py`. You can use https://www.text-image.com/convert/ascii.html to convert images to frames.
+1. Import it from the `frames/__init__.py`
 1. Import it from `oldik.py`.
-1. Add your imported frame to the `COUNTRY_TO_FRAMES` dictionary. It has to map to a country name. For example, Uzbekistan maps to piyola frames..
+1. Add your imported frame to the `VERSION_TO_FRAMES` dictionary. It has to map to a version name. For example, Uzbekistan maps to piyola frames..
 1. That's it.
 
 ## How To Use
@@ -36,5 +37,5 @@ $ pip install -r requirements.txt
 $ python oldik.py
 
 # Try other options
-$ python oldik.py --country=uzbekistan
+$ python oldik.py --version=uzbekistan
 ```

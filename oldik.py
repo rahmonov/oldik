@@ -1,17 +1,14 @@
 import typer
 
 import time
-from frames.piyola import piyola_frames
-from frames.beer import beer_frames
-from frames.glass import glass_frames
-from frames.cola import cola_frames
+from frames import piyola_frames, beer_frames, glass_frames, cola_frames
 
 DEFAULT_FRAMES = glass_frames
 
-COUNTRY_TO_FRAMES = {
+VERSION_TO_FRAMES = {
     "uzbekistan": piyola_frames,
     "germany": beer_frames,
-    "gopher": cola_frames
+    "cola": cola_frames
 }
 
 
@@ -22,9 +19,7 @@ def clear_line(n=1):
         print(LINE_UP, end=LINE_CLEAR)
 
 
-def animate_cheers(country: str = ""):
-    frames = COUNTRY_TO_FRAMES.get(country.lower(), DEFAULT_FRAMES)
-
+def animate_frames(frames):
     i = 0
     while True:
         line_count = len(frames)
@@ -36,8 +31,13 @@ def animate_cheers(country: str = ""):
         i %= line_count
 
 
-def main(country: str = ""):
-    animate_cheers(country)
+def animate_version(version: str = ""):
+    frames = VERSION_TO_FRAMES.get(version.lower(), DEFAULT_FRAMES)
+    animate_frames(frames)
+
+
+def main(version: str = ""):
+    animate_version(version)
 
 
 if __name__ == '__main__':

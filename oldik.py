@@ -1,12 +1,13 @@
 import typer
 
 import time
-from frames import glass_frames, piyola_frames
+from frames import glass_frames, piyola_frames, beer_frames
 
 DEFAULT_FRAMES = glass_frames
 
 COUNTRY_TO_FRAMES = {
-    "uzbekistan": piyola_frames
+    "uzbekistan": piyola_frames,
+    "germany": beer_frames
 }
 
 

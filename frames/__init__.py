@@ -4,3 +4,4 @@ from .glass import glass_frames
 from .cola import cola_frames
 from .broken_glass import broken_glass_frames
 from .wine import wine_frames
+from .frames import get_ascii_frames

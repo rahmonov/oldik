@@ -2,7 +2,11 @@ import typer
 
 import time
 
+
+from frames import piyola_frames, beer_frames, glass_frames, cola_frames, broken_glass_frames, love_frames
+
 from frames import piyola_frames, beer_frames, glass_frames, cola_frames, broken_glass_frames, get_ascii_frames
+
 
 DEFAULT_FRAMES = glass_frames
 
@@ -10,7 +14,8 @@ VERSION_TO_FRAMES = {
     "uzbekistan": piyola_frames,
     "germany": beer_frames,
     "canada": broken_glass_frames,
-    "cola": cola_frames
+    "cola": cola_frames,
+    "love": love_frames
 }
 
 

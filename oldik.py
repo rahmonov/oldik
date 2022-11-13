@@ -30,7 +30,7 @@ def animate_frames(frames):
         line_count = len(frames)
         frame = frames[i]
         print(frame)
-        time.sleep(.2)
+        time.sleep(.1)
         clear_line(len(frame.split("\n")))
         i += 1
         i %= line_count
@@ -40,17 +40,19 @@ def animate_version(version: str = ""):
     frames = VERSION_TO_FRAMES.get(version.lower(), DEFAULT_FRAMES)
     animate_frames(frames)
 
-# animate_gif converts gif file to frames and animates as ascii art
+
 def animate_gif(path: str):
     frames = get_ascii_frames(path)
     animate_frames(frames)
+
 
 def main(version: str = "uzbekistan", path: str = None):
     # If gif path specified, then animate gif
     if path:
         animate_gif(path)
-        return
-    animate_version(version)
+    else:
+        animate_version(version)
+
 
 if __name__ == '__main__':
     typer.run(main)

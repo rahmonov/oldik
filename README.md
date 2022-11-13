@@ -1,4 +1,3 @@
-
 <h1 align="center">
   <br>
   <a href="https://t.me/jakhonrakhmonov"><img src="https://raw.githubusercontent.com/rahmonov/oldik/main/images/clinking-glasses.png" alt="Oldik" width="200"></a>
@@ -17,6 +16,7 @@
 1. Import it from the `frames/__init__.py`
 1. Import it from `oldik.py`.
 1. Add your imported frame to the `VERSION_TO_FRAMES` dictionary. It has to map to a version name. For example, Uzbekistan maps to piyola frames..
+1. Or specify path for your gif without any headaches :)
 1. That's it.
 
 ## How To Use
@@ -38,4 +38,7 @@ $ python oldik.py
 
 # Try other options
 $ python oldik.py --version=uzbekistan
+
+# Try with gifs
+$ python oldik.py --path=images/cheers.gif
 ```

@@ -1,6 +1,6 @@
 import typer
 import time
-from frames import piyola_frames, beer_frames, glass_frames, cola_frames, broken_glass_frames,wine_frames,get_ascii_frames
+from frames import piyola_frames, beer_frames, glass_frames, cola_frames, broken_glass_frames, wine_frames, get_ascii_frames
 
 DEFAULT_FRAMES = glass_frames
 
@@ -29,7 +29,7 @@ def animate_frames(frames):
         line_count = len(frames)
         frame = frames[i]
         print(frame)
-        time.sleep(0.2)
+        time.sleep(.1)
         clear_line(len(frame.split("\n")))
         i += 1
         i %= line_count

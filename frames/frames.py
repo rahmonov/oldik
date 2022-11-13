@@ -35,4 +35,3 @@ def get_ascii_frames(filePath):
             frames.append(ascii_image)
 
     return frames
-            

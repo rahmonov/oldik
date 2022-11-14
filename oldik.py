@@ -2,10 +2,15 @@ import typer
 
 import time
 
-
-from frames import piyola_frames, beer_frames, glass_frames, cola_frames, broken_glass_frames, love_frames
-
-from frames import piyola_frames, beer_frames, glass_frames, cola_frames, broken_glass_frames, get_ascii_frames
+from frames import (
+    piyola_frames,
+    beer_frames,
+    glass_frames,
+    cola_frames,
+    broken_glass_frames,
+    get_ascii_frames,
+    love_frames,
+)
 
 
 DEFAULT_FRAMES = glass_frames
